@@ -8,8 +8,16 @@ import { QuintaPageRoutingModule } from './quinta-routing.module';
 
 import { QuintaPage } from './quinta.page';
 
+
+//https://www.npmjs.com/package/angularx-qrcode
+// instalar: npm install angular-qrcode --save
+
+import { QRCodeModule } from 'angularx-qrcode';
+//
+
 @NgModule({
   imports: [
+    QRCodeModule,
     CommonModule,
     FormsModule,
     IonicModule,
