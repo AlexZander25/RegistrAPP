@@ -14,7 +14,23 @@ const routes: Routes = [
   {
     path: 'primera',
     loadChildren: () => import('./primera/primera.module').then( m => m.PrimeraPageModule)
+  },  {
+    path: 'segunda',
+    loadChildren: () => import('./segunda/segunda.module').then( m => m.SegundaPageModule)
   },
+  {
+    path: 'tercera',
+    loadChildren: () => import('./tercera/tercera.module').then( m => m.TerceraPageModule)
+  },
+  {
+    path: 'cuarta',
+    loadChildren: () => import('./cuarta/cuarta.module').then( m => m.CuartaPageModule)
+  },
+  {
+    path: 'quinta',
+    loadChildren: () => import('./quinta/quinta.module').then( m => m.QuintaPageModule)
+  },
+
 ];
 
 @NgModule({
