@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="end">
-      <ion-back-button defaultHref="menu"></ion-back-button>
+      <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -17,10 +17,8 @@
   <br>
   <a> Restablecer contraseña</a>
   <br>
-  <a> Restablecer contraseña</a>
-  <a> HOLA </a>
   <br>
   <br><br>
-  <ion-button expand="block">Aceptar</ion-button>
+  <ion-button expand="block" [routerLink]="['/tercera']">Aceptar</ion-button>
 
 </ion-content>

@@ -1,13 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>segunda</ion-title>
+    <ion-title>Segunda</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">segunda</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h1>Registrate</h1>
+  <br><br>
+  <label>Nombre</label>
+  <ion-input type="text" placeholder="Ingrese nombre"></ion-input>
+  <ion-input type="email" label="Email" labelPlacement="floating" helperText="Debe ingrese un correo válido"
+    errorText="El correo no es válido" ngModel email placeholder="Ingrese primer correo"></ion-input>
+
+  <br>
+  <label>Clave</label>
+  <ion-input type="password" placeholder="******"></ion-input>
 </ion-content>
